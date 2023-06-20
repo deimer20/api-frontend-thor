@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css">
+    
+    <title>Registrar Empleados</title>
+</head >
+<body>
+  <div class="nav-item d-none d-sm-inline-block">
+    <a class=""   role="button"  id="botoncerrar">  
+       <i class="btn btn-danger boton-registro">Cerrar Sesion</i>
+      <script src="http://localho/consumirAPI/login.html"></script><br>
+    </a>
+  </div>
+    <div class="row"></div>
+      <div class="col-lg-10">
+        <a class="btn btn-danger boton-registro" href="http://localhost:3000/consumirAPI/home.html">Regresar a Home</a></div><br>
+         <div class="col-lg-10">
+           <h2><a style="color: black;">Registrar empleados</a></h2></div>
+    <div class="container">
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">contacts</i>
+                  <input id="cedula" type="text" class="validate" placeholder="cedula">
+                  <label for="cedula">cedula</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">person_add ed</i>
+                <input id="nombre_Empleado" type="text" class="validate" placeholder="nombre_Empleado">
+                <label for="nombre_Empleado">nombre_Empleado</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                <input id="correo" type="text" class="validate" placeholder="correo">
+                <label for="correo">correo</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">room</i>
+                <input id="direccion" type="text" class="validate" placeholder="direccion">
+                <label for="direccion">direccion</label>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">phone_android</i>
+                  <input id="telefono" type="text" class="validate" placeholder="telefono">
+                  <label for="telefono">telefono</label>
+                </div>
+              </div>
+              <div class="row">
+               <div class="input-field col s6">
+                  <select class="browser-default" id="estado_Empleado">
+                    <option value="" disabled selected>Elegir el estado</option>
+                    <option value="true">Activo</option>
+                    <option value="false">Inactivo</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="input-field col s6">
+                      <button id="btnRegistrar" class="btn waves-effect waves-light" type="button" name="action">registrar
+                          <i class="material-icons right">send</i>
+                      </button>
+                  </div>
+                </div>
+          </form>
+        </div>
+      </div>
+  </div>
+  <button class="btn waves-effect waves-light" onclick="mostrarLista()">Mostrar Lista de Datos</button>
+        <script> function mostrarLista() {window.location.href = "listarDatos.html";}</script>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js"></script>
+    <script src="js/funcionesEmpleados.js"></script>
+</body>
+</html>
+
+<!-- https://materializecss.com/icons.html-->

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Editar Usuario</title>
+</head >
+<body>
+  <div class="container">
+    <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">contacts</i>
+              <input id="cedula" type="text" class="validate" placeholder="cedula">
+              <label for="cedula">cedula</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">person_add ed</i>
+            <input id="nombre_Cliente" type="text" class="validate" placeholder="nombre_Cliente">
+            <label for="nombre_Cliente">nombre_Cliente</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">email</i>
+            <input id="correo" type="text" class="validate" placeholder="correo">
+            <label for="correo">correo</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">room</i>
+            <input id="direccion" type="text" class="validate" placeholder="direccion">
+            <label for="direccion">direccion</label>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">phone_android</i>
+              <input id="telefono" type="text" class="validate" placeholder="telefono">
+              <label for="telefono">telefono</label>
+            </div>
+          </div>
+          <div class="row">
+           <div class="input-field col s6">
+              <select class="browser-default" id="estado_Cliente">
+                <option value="" disabled selected>Elegir el estado</option>
+                <option value="true">Activo</option>
+                <option value="false">Inactivo</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+              <div class="input-field col s6">
+                  <button id="btnRegistrar" class="btn waves-effect waves-light" type="button" name="action">actualizar
+                      <i class="material-icons right">send</i>
+                  </button>
+              </div>
+            </div>
+      </form>
+    </div>
+  
+</div>
+<div class="modal-footer">
+  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salir</a>
+  
+</div>
+</div>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js"></script>
+
+<script src="js/funcionesEmpleados.js"></script>
+</body>
+</html>
+
+<!-- https://materializecss.com/icons.html-->
