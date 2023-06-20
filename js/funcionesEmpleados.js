@@ -293,7 +293,7 @@ function cerrar() {
         timer: 2000}
       );
       setTimeout(() => {
-        window.location.href = "login.html";
+        window.location.href = "index.html";
       }, 2000);
     }
   });
