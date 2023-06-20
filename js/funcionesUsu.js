@@ -1,4 +1,4 @@
-const url = 'http://localhost:8082/api/usuario' //url de la api. Al desplegarla en el servidor local colocar la api del servi
+const url = 'https://api-backend-f5d0.onrender.com/api/usuario' //url de la api. Al desplegarla en el servidor local colocar la api del servi
 const listarDatosUsu = async() => {
     let respuesta = ''
     let body = document.getElementById('contenido')

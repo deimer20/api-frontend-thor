@@ -1,4 +1,4 @@
-const url = 'http://localhost:8082/api/empleados' //url de la api. Al desplegarla en el servidor local colocar la api del servi
+const url = 'https://api-backend-f5d0.onrender.com/api/empleados' //url de la api. Al desplegarla en el servidor local colocar la api del servi
 const listarDatos = async() => {
     let respuesta = ''
     let body = document.getElementById('contenido')
@@ -268,7 +268,7 @@ function login() {
     })
     
     setTimeout(() => {
-      window.location.href = "/consumirAPI/home.html";
+      window.location.href = "home.html";
     }, 2000);
     
   } else {
